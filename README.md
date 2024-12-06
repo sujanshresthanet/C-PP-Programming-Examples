@@ -1,7 +1,7 @@
-C++ Programming Tools Examples
+C++ Programming Examples
 ==============================
 
-Welcome to the C++ Programming Tools Examples repository! 🚀
+Welcome to the C++ Programming Examples repository! 🚀
 
 This repository contains a collection of small example projects and tools implemented in C++. Each project demonstrates specific concepts, algorithms, or utilities to help you understand and apply C++ programming effectively.
 
@@ -18,22 +18,18 @@ This repository contains a collection of small example projects and tools implem
 *   **Modular Design**: Each project is self-contained and easy to run.
 *   **Cross-Platform**: Works on Windows, macOS, and Linux.
 
-1. Basic Concepts
-------------------
+## Basic Concepts
 
 In this section, you'll learn the fundamental building blocks of C++ programming, such as variables, data types, operators, and control structures.
 
-2. Object-Oriented Programming (OOP)
--------------------------------------
+## Object-Oriented Programming (OOP)
 
 This section introduces Object-Oriented Programming (OOP) concepts in C++ such as classes, objects, inheritance, and polymorphism.
 
-3. Advanced Concepts
----------------------
+## Advanced Concepts
 
 This section explores advanced features of C++, such as pointers, dynamic memory allocation, file handling, and templates.
 
-4. Conclusion
---------------
+## Conclusion
 
 These projects will help you build a strong foundation in C++. They are designed to enhance your understanding of C++ concepts and improve your problem-solving skills. Happy coding!
