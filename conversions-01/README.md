@@ -37,17 +37,17 @@ If you don't have a C++ compiler installed, you'll need to install one first:
 2.  Navigate to the directory where the `.cpp` file is located.
 3.  Run the following command to compile the program:
 
-    g++ -o conversion_program conversion_program.cpp
+    g++ -o conversions conversions.cpp
 
-This will create an executable file called `conversion_program` (or `conversion_program.exe` on Windows).
+This will create an executable file called `conversions` (or `conversions.exe` on Windows).
 
 ### Step 3: Run the Program
 
 To run the compiled program, use the following command:
 
-    ./conversion_program  # On Linux/macOS
+    ./conversions  # On Linux/macOS
 
-    conversion_program.exe  # On Windows
+    conversions.exe  # On Windows
 
 ### Step 4: Use the Program
 
