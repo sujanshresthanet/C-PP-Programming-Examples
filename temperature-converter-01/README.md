@@ -21,51 +21,51 @@ How to Run the Program
 
 ### Step 1: Write the Code
 
-Copy the C++ code from the repository or use the following code to create a new file named **TemperatureConverter.cpp**:
+Copy the C++ code from the repository or use the following code to create a new file named **temperature-converter.cpp**:
 
-#include #include // for std::numeric\_limits
-#include // for std::tolower
+    #include #include // for std::numeric\_limits
+    #include // for std::tolower
+    
+    using namespace std;
+    
+    // Function to convert from Celsius to Fahrenheit, Kelvin
+    double celsiusToFahrenheit(double celsius) {
+        return (celsius \* 9/5) + 32;
+    }
+    
+    double celsiusToKelvin(double celsius) {
+        return celsius + 273.15;
+    }
+    
+    // Function to convert from Fahrenheit to Celsius, Kelvin
+    double fahrenheitToCelsius(double fahrenheit) {
+        return (fahrenheit - 32) \* 5/9;
+    }
+    
+    double fahrenheitToKelvin(double fahrenheit) {
+        return (fahrenheit - 32) \* 5/9 + 273.15;
+    }
+    
+    // Function to convert from Kelvin to Celsius, Fahrenheit
+    double kelvinToCelsius(double kelvin) {
+        return kelvin - 273.15;
+    }
+    
+    double kelvinToFahrenheit(double kelvin) {
+        return (kelvin - 273.15) \* 9/5 + 32;
+    }
+    
+    bool isValidTemperatureUnit(char unit) {
+        return (unit == 'C' || unit == 'F' || unit == 'K');
+    }
+    
+    int main() {
+        char cont = 'y';
+        while (tolower(cont) == 'y') {
+            double temp;
+            char fromUnit, toUnit;
 
-using namespace std;
-
-// Function to convert from Celsius to Fahrenheit, Kelvin
-double celsiusToFahrenheit(double celsius) {
-    return (celsius \* 9/5) + 32;
-}
-
-double celsiusToKelvin(double celsius) {
-    return celsius + 273.15;
-}
-
-// Function to convert from Fahrenheit to Celsius, Kelvin
-double fahrenheitToCelsius(double fahrenheit) {
-    return (fahrenheit - 32) \* 5/9;
-}
-
-double fahrenheitToKelvin(double fahrenheit) {
-    return (fahrenheit - 32) \* 5/9 + 273.15;
-}
-
-// Function to convert from Kelvin to Celsius, Fahrenheit
-double kelvinToCelsius(double kelvin) {
-    return kelvin - 273.15;
-}
-
-double kelvinToFahrenheit(double kelvin) {
-    return (kelvin - 273.15) \* 9/5 + 32;
-}
-
-bool isValidTemperatureUnit(char unit) {
-    return (unit == 'C' || unit == 'F' || unit == 'K');
-}
-
-int main() {
-    char cont = 'y';
-    while (tolower(cont) == 'y') {
-        double temp;
-        char fromUnit, toUnit;
-
-        // Input: get temperature and units from the user
+    // Input: get temperature and units from the user
         cout << "Enter temperature value: ";
         while (!(cin >> temp)) {
             cout << "Invalid input. Please enter a numeric value for temperature: ";
@@ -139,28 +139,28 @@ int main() {
 
     cout << "Goodbye!" << endl;
     return 0;
-}
+    }
     
 
 ### Step 2: Compile the Code
 
-To compile the program, open your terminal or command prompt, navigate to the directory where the **TemperatureConverter.cpp** file is located, and run the following command:
+To compile the program, open your terminal or command prompt, navigate to the directory where the **temperature-converter.cpp** file is located, and run the following command:
 
-g++ -o TemperatureConverter TemperatureConverter.cpp
+g++ -o temperature-converter temperature-converter.cpp
     
 
-This will create an executable file named **TemperatureConverter** in the same directory.
+This will create an executable file named **temperature-converter** in the same directory.
 
 ### Step 3: Run the Program
 
 After compiling the code, you can run the program by executing the following command in the terminal or command prompt:
 
-./TemperatureConverter
+./temperature-converter
     
 
 On Windows, you can run the program by typing:
 
-TemperatureConverter.exe
+temperature-converter.exe
     
 
 ### Step 4: Interact with the Program
